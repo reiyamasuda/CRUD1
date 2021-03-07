@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Pref extends Model
 {
     protected $guarded = ['id'];
-    protected $dates = ['created_at'];
+    protected $dates = ['created_at','updated_at'];
 
 }
