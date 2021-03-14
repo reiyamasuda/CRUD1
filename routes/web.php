@@ -11,10 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/', 'WelcomeController@index'); 
-Route::get('contact', 'WelcomeController@contact');
-Route::get('about', 'PagesController@about');
+Route::get('/', 'CustomerController@index')->name('index');
