@@ -11,8 +11,3 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
-class PagesController extends Controller {
-    public function about() {
-        return view('pages.about');
-    }
-}
