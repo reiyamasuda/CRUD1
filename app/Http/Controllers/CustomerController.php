@@ -3,12 +3,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Customer;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
     public function index() {
-        return view('index');
+        $customers = Customer::all();
+        return view('index', ['customers' => $customers]);
     }
 
     public function search(Request $request) {
@@ -20,7 +22,9 @@ class CustomerController extends Controller
     }
 
     public function detail(Request $request) {
-        return view('detail');
+        $id = $request->id;
+        $customer = Customer::findOrFail($id);
+        return view('detail', ['customer' => $customer]);
     }
 
     public function edit(Request $request) {
