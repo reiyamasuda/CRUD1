@@ -4,6 +4,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\create;
+use Illuminate\Http\detail;
+use Illuminate\Http\edit;
 
 class CustomerController extends Controller
 {
@@ -15,10 +18,15 @@ class CustomerController extends Controller
         return view('index');
     }
 
-    //create
+    public function search(create $create) {
+        return view('index');
+    }
 
+    public function search(detail $detail) {
+        return view('index');
+    }
 
-    //detail
-
-    //edit
+    public function search(edit $edit) {
+        return view('index');
+    }
 }
