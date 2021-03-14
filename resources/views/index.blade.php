@@ -32,7 +32,7 @@
                     </div>
 
                     <div style="margin-bottom:20px;">
-                        <form id="form" method="post" action="index.html">
+                        <form id="form" method="post" action="{{ route('search') }}">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
@@ -81,7 +81,7 @@
                             【メッセージサンプル】該当データが見つかりません。
                         </div>
                         <div class="form-group row">
-                            <a  class="btn btn-success" href="create.html" style="width:150px"><i class="fas fa-chalkboard-teacher pr-1"></i> 新規登録</a>
+                            <a  class="btn btn-success" href="{{ route('create') }}" style="width:150px"><i class="fas fa-chalkboard-teacher pr-1"></i> 新規登録</a>
                         </div>
                     </div>
 

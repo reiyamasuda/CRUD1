@@ -12,3 +12,11 @@
 */
 
 Route::get('/', 'CustomerController@index')->name('index');
+
+Route::post('/', 'CustomerController@search')->name('search');
+
+Route::get('/create', 'CustomerController@create')->name('create');
+
+Route::get('/detail', 'CustomerController@detail')->name('detail');
+
+Route::get('/edit', 'CustomerController@edit')->name('edit');

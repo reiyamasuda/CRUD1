@@ -18,15 +18,15 @@ class CustomerController extends Controller
         return view('index');
     }
 
-    public function search(create $create) {
-        return view('index');
+    public function create(Request $request) {
+        return view('create');
     }
 
-    public function search(detail $detail) {
-        return view('index');
+    public function detail(Request $request) {
+        return view('detail');
     }
 
-    public function search(edit $edit) {
-        return view('index');
+    public function edit(Request $request) {
+        return view('edit');
     }
 }
