@@ -20,3 +20,9 @@ Route::get('/create', 'CustomerController@create')->name('create');
 Route::get('/detail', 'CustomerController@detail')->name('detail');
 
 Route::get('/edit', 'CustomerController@edit')->name('edit');
+
+Route::post('/store', 'CustomerController@store')->name('store');
+
+Route::post('/update', 'CustomerController@update')->name('update');
+
+Route::get('/delete', 'CustomerController@delete')->name('delete');

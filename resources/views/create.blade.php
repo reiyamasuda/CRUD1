@@ -30,7 +30,8 @@
                     【メッセージサンプル】エラーです。
                 </div>
 
-                <form id="form" method="post" action="index.html">
+                <form id="form" method="post" action="{{ route('store') }}">
+                    @csrf
                     <div class="col-md-8 order-md-1">
                         <div class="row">
                             <div class="col-md-3 mb-3">
@@ -140,7 +141,7 @@
                 </form>
                 <hr class="mb-4">
                 <div class="form-group">
-                    <a  class="btn btn-secondary" href="index.html" style="width:150px">戻る</a>
+                    <a  class="btn btn-secondary" href="{{ route('index') }}" style="width:150px">戻る</a>
                     <button id="complete" type="button" class="btn btn-success" style="width:150px"><i class="fas fa-database pr-1"></i> 登録</button>
                 </div>
             </div>

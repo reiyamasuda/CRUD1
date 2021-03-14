@@ -4,9 +4,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\create;
-use Illuminate\Http\detail;
-use Illuminate\Http\edit;
 
 class CustomerController extends Controller
 {
@@ -28,5 +25,17 @@ class CustomerController extends Controller
 
     public function edit(Request $request) {
         return view('edit');
+    }
+
+    public function store(Request $request) {
+        return redirect()->route('index');
+    }
+
+    public function update(Request $request) {
+        return redirect()->route('index');
+    }
+
+    public function delete(Request $request) {
+        return redirect()->route('index');
     }
 }

@@ -33,6 +33,7 @@
 
                     <div style="margin-bottom:20px;">
                         <form id="form" method="post" action="{{ route('search') }}">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
@@ -107,7 +108,7 @@
                             <tbody id="content">
                                 <tr>
                                     <td scope="col">1</td>
-                                    <td scope="col"><a href="detail.html">苗字　名前</a></td>
+                                    <td scope="col"><a href="{{ route('detail') }}">苗字　名前</a></td>
                                     <td scope="col">みょうじ なまえ</td>
                                     <td scope="col">男</td>
                                     <td scope="col">1973/01/24</td>
@@ -118,7 +119,7 @@
                                     <td scope="col">bobtabo.buhibuhi@gmail.com</td>
                                     <td scope="col">2020/08/30　23：12：34</td>
                                     <td scope="col">2020/08/30　23：12：34</td>
-                                    <td scope="col"><a class="btn btn-info" href="edit.html">編集</a></td>
+                                    <td scope="col"><a class="btn btn-info" href="{{ route('edit') }}">編集</a></td>
                                 </tr>
                                 <tr>
                                     <td scope="col">1</td>
